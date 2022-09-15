@@ -7,3 +7,15 @@ h1{
     color: white;
     text-shadow: 0 0 5px black;
 }
+.pages{
+    background-color: rgb(55, 55, 201);
+    border: 1px solid rgb(0,0,128);
+    color: white;
+    display: flex;
+    text-shadow: 0 0 5px black;
+}
+.support{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+}
