@@ -1,5 +1,8 @@
 .background {
-    background-image:url('fond.png');
+    background-image:url('other/fond.png');
+}
+#home{
+
 }
 h1{
     text-align: center;
@@ -7,17 +10,24 @@ h1{
     color: white;
     text-shadow: 0 0 5px black;
 }
-.pages{
+#pages{
     background-color: rgb(55, 55, 201);
     border: 1px solid rgb(0,0,128);
     color: white;
     display: flex;
+    justify-content: space-around;
     text-shadow: 0 0 5px black;
 }
-div.pages span{
+#presentation{
+
+}
+#projet{
+    
+}
+header#pages span{
     border: 1px solid rgb(0,0,128);
     cursor: pointer;
-    font-size: 35px;
+    font-size: 55px;
     margin: 0px;
     padding: 2px;
 }
@@ -25,4 +35,7 @@ div.pages span{
     background-color: white;
     border: 5px solid black;
     border-radius: 10px;
+}
+#youtube{
+
 }
