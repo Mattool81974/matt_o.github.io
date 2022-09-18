@@ -24,9 +24,14 @@ h1{
 #projet{
     
 }
-header#pages span{
+#references{
+
+}
+header#pages button{
     border: 1px solid rgb(0,0,128);
+    background-color: rgb(55, 55, 201);
     cursor: pointer;
+    color: white;
     font-size: 55px;
     margin: 0px;
     padding: 2px;
