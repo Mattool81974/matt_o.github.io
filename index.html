@@ -3,43 +3,54 @@
         <meta charset="UTF-8">
         <meta name="author" content="Matt_o">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="newstyle.css">
         <title>Matt_o</title>
     </head>
-    <body class="background">
+    <body id="background">
         <header>
             <h1>
                 Matt_o
             </h1>
         </header>
-        <article class="support"> 
+        <section class="support"> 
             <header id="pages">
-                <button type="button" onclick="homeClick()" id="home">Home</button>
-                <button type="button" onclick="presentationClick()" id="presentation">Présentation</button>
-                <button type="button" onclick="youtubeClick()" id="youtube">Youtube</button>
-                <button type="button" onclick="projetClick()" id="projet">Projets</button>
-                <button type="button" onclick="referenceClick()" id="references">Références</button>
+                <button type="button" id="home">Home</button>
+                <button type="button" onclick="presentationClick();" id="presentation">Présentation</button>
+                <button type="button" onclick="youtubeClick();" id="youtube">Youtube</button>
+                <button type="button" onclick="projetClick();" id="projet">Projets</button>
+                <button type="button" onclick="referenceClick();" id="references">Références</button>
                 <!--Code des boutons-->
                 <script>
-                    function homeClick() {
-                        
-                    }
                     function presentationClick() {
-                        
+                        window.location.assign("presentation.html");
                     }
                     function youtubeClick() {
-                        
+                        window.location.assign("youtube.html");
                     }
                     function projetClick() {
-                        
+                        window.location.assign("projets.html");
                     }
                     function referenceClick() {
-                        
+                        window.location.assign("reference.html");
                     }
                 </script>
             </header>
-            <div>
-                Repassez plus tard :)
-            </div>
-        </article>
+            <section>
+                <header>
+                    <h2>Dernière News</h2>
+                </header>
+                    <article class="news news1"> <!--20/09/2022-->
+                        <h1>Ouverture partiel du site web !</h1>
+                        <div class="support">
+                            <p>
+                                Le site a officiellement sortie sa première version réelement utilisable !
+                                Même si les options sont limités comparées à ce qui est prévue pour la suite, il faut bien un début à tout.
+                                La version actuelle est la version "Site web 2-1".
+                                Les pages présentation, youtube, projets et références ne sont pour l'instant pas disponible (ou du moins très limité).
+                            </p>
+                        </div>
+                    </article>
+            </section>
+        </section>
     </body>
 </html>
