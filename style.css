@@ -10,6 +10,7 @@ article.news div.support{
     margin: 3px;
     padding: 2px;
 }
+/*Support du texte des news de la page index.html*/
 article.news div.support p{
     font-size: 24px;
 }
@@ -32,6 +33,12 @@ h1{
 h2{
     text-align: center;
     font-size: 45px;
+}
+/*Conteneur de news*/
+#newsconteneur{
+    display: inline-grid;
+    grid-auto-columns: auto 2 2 auto;
+    grid-auto-rows: auto 2 2 auto;
 }
 /*Boutons*/
 #pages{

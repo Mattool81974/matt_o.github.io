@@ -1,4 +1,20 @@
+/*News 21/09/2022 modification du texte*/
+article.news2 div.support{
+    background-color: rgba(255, 255, 255, 0.75);
+}
 /*News 20/09/2022*/
 .news1{
     background-image:url('other/fond.png');
+    grid-column: 1;
+    grid-row: 1;
+}
+/*News 21/09/2022*/
+.news2{
+    background-image:url('other/news/news2.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color: rgb(24, 24, 24);
+    grid-column: 2;
+    grid-row: 1;
 }
