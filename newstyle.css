@@ -5,8 +5,6 @@ article.news2 div.support{
 /*News 20/09/2022*/
 .news1{
     background-image:url('other/fond.png');
-    grid-column: 1;
-    grid-row: 1;
 }
 /*News 21/09/2022*/
 .news2{
@@ -15,6 +13,4 @@ article.news2 div.support{
     background-position: top center;
     background-size: contain;
     background-color: rgb(24, 24, 24);
-    grid-column: 2;
-    grid-row: 1;
 }

@@ -18,6 +18,15 @@ article.news div.support p{
 #background {
     background-image:url('other/fond.png');
 }
+/*Guidage*/
+#guidage{
+    margin: 5px;
+    padding: 5px;
+}
+/*Texte dans le guidage*/
+section#guidage div{
+    font-size: 22px;
+}
 /*Bouton home*/
 #home{
 
@@ -36,9 +45,12 @@ h2{
 }
 /*Conteneur de news*/
 #newsconteneur{
-    display: inline-grid;
-    grid-auto-columns: auto 2 2 auto;
-    grid-auto-rows: auto 2 2 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+/*Article dans les news*/
+#newsconteneur article{
+    flex: 1 1 47%;
 }
 /*Boutons*/
 #pages{
@@ -46,8 +58,12 @@ h2{
     border: 1px solid rgb(0,0,128);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-shadow: 0 0 5px black;
+}
+#pages button{
+    flex: 1 1 20%;
 }
 /*Bouton présentation*/
 #presentation{
