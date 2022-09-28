@@ -5,6 +5,14 @@ article.news h1{
     color: white;
     text-shadow: 0 0 5px black;
 }
+/*Titre date news de la page index.html*/
+article.news h2{
+    margin-left: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
 /*Support du texte des news de la page index.html*/
 article.news div.support{
     margin: 3px;
@@ -13,10 +21,6 @@ article.news div.support{
 /*Support du texte des news de la page index.html*/
 article.news div.support p{
     font-size: 24px;
-}
-/*Background de chaque pages*/
-#background {
-    background-image:url('other/fond.png');
 }
 /*Guidage*/
 #guidage{
@@ -27,22 +31,6 @@ article.news div.support p{
 section#guidage div{
     font-size: 22px;
 }
-/*Bouton home*/
-#home{
-
-}
-/*Touts les gros titres h1*/
-h1{
-    text-align: center;
-    font-size: 75px;
-    color: white;
-    text-shadow: 0 0 5px black;
-}
-/*Touts les gros titres h2*/
-h2{
-    text-align: center;
-    font-size: 45px;
-}
 /*Conteneur de news*/
 #newsconteneur{
     display: inline-flex;
@@ -52,55 +40,10 @@ h2{
 #newsconteneur article{
     flex: 1 1 45.7%;
 }
-/*Boutons*/
-#pages{
-    background-color: rgb(55, 55, 201);
-    border: 1px solid rgb(0,0,128);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-shadow: 0 0 5px black;
-}
-#pages button{
-    flex: 1 1 20%;
-}
-/*Bouton présentation*/
-#presentation{
-
-}
-/*Bouton projets*/
-#projet{
-    
-}
-/*Bouton références*/
-#references{
-
-}
-/*Boutons*/
-header#pages button{
-    border: 1px solid rgb(0,0,128);
-    background-color: rgb(55, 55, 201);
-    cursor: pointer;
-    color: white;
-    font-size: 55px;
-    margin: 0px;
-    padding: 2px;
-}
 /*News de la page index.html*/
 .news{
     background-color: white;
     border: 5px solid black;
     border-radius: 10px;
     margin: 15px;
-}
-/*Support général*/
-.support{
-    background-color: white;
-    border: 5px solid black;
-    border-radius: 10px;
-}
-/*Bouton youtube*/
-#youtube{
-
 }

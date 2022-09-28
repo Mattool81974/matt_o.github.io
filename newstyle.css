@@ -2,6 +2,15 @@
 article.news2 div.support{
     background-color: rgba(255, 255, 255, 0.75);
 }
+/*News 28/09/2022 modification du texte*/
+article.news3 div.support{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+/*News 28/09/2022 modification de la date*/
+article.news3 h2{
+    color: black;
+    text-shadow: none;
+}
 /*News 20/09/2022*/
 .news1{
     background-image:url('other/fond.png');
@@ -13,4 +22,12 @@ article.news2 div.support{
     background-position: top center;
     background-size: contain;
     background-color: rgb(24, 24, 24);
+}
+/*News 28/09/2022*/
+.news3{
+    background-image:url('other/news/news3.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color: white;
 }

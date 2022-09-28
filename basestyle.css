@@ -1,0 +1,46 @@
+/*Background de chaque pages*/
+#background {
+    background-image:url('other/fond.png');
+}
+/*Boutons*/
+header#pages button{
+    border: 1px solid rgb(0,0,128);
+    background-color: rgb(55, 55, 201);
+    cursor: pointer;
+    color: white;
+    font-size: 55px;
+    margin: 0px;
+    padding: 2px;
+}
+/*Touts les gros titres h1*/
+h1{
+    text-align: center;
+    font-size: 75px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+/*Touts les gros titres h2*/
+h2{
+    text-align: center;
+    font-size: 45px;
+}
+/*Boutons*/
+#pages{
+    background-color: rgb(55, 55, 201);
+    border: 1px solid rgb(0,0,128);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-shadow: 0 0 5px black;
+}
+/*Arrangement des boutons dans la page*/
+#pages button{
+    flex: 1 1 20%;
+}
+/*Support général*/
+.support{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+}
