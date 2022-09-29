@@ -40,6 +40,12 @@ section#guidage div{
 #newsconteneur article{
     flex: 1 1 45.7%;
 }
+/*Style pour téléphone*/
+@media (max-width: 802px) {
+    #newsconteneur article{
+        flex: 1 1 auto;
+    }
+}
 /*News de la page index.html*/
 .news{
     background-color: white;
