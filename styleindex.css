@@ -38,13 +38,7 @@ section#guidage div{
 }
 /*Article dans les news*/
 #newsconteneur article{
-    flex: 1 1 45.7%;
-}
-/*Style pour téléphone*/
-@media (max-width: 802px) {
-    #newsconteneur article{
-        flex: 1 1 auto;
-    }
+    flex: 1 1 5in;
 }
 /*News de la page index.html*/
 .news{
