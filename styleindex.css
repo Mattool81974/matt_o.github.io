@@ -22,15 +22,6 @@ article.news div.support{
 article.news div.support p{
     font-size: 24px;
 }
-/*Guidage*/
-#guidage{
-    margin: 5px;
-    padding: 5px;
-}
-/*Texte dans le guidage*/
-section#guidage div{
-    font-size: 22px;
-}
 /*Conteneur de news*/
 #newsconteneur{
     display: inline-flex;

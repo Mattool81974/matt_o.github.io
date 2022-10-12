@@ -12,6 +12,11 @@ header#pages button{
     margin: 0px;
     padding: 2px;
 }
+/*Guidage*/
+#guidage{
+    margin: 5px;
+    padding: 5px;
+}
 /*Touts les gros titres h1*/
 h1{
     text-align: center;
@@ -37,6 +42,10 @@ h2{
 /*Arrangement des boutons dans la page*/
 #pages button{
     flex: 1 1 20%;
+}
+/*Texte dans le guidage*/
+section#guidage div{
+    font-size: 22px;
 }
 /*Support général*/
 .support{

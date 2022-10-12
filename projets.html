@@ -3,6 +3,9 @@
         <meta charset="UTF-8">
         <meta name="author" content="Matt_o">
         <link rel="stylesheet" href="basestyle.css">
+        <link rel="stylesheet" href="styleprojets.css">
+        <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+        <script type="text/javascript" src="other/projects/projectsapi.js"></script>
         <title>Projets</title>
     </head>
     <body id="background">
@@ -34,6 +37,41 @@
                     }
                 </script>
             </header>
+            <section class="support" id="guidage">
+                <header>
+                    <h2>Bienvenue sur la section projet !</h2>
+                </header>
+                <div>
+                    Bon, vous voulez donc voir mes projets. Bon choix, bon choix. Je dit pas que c'est incroyable, oublié pas que je
+                    suis au lycée (la mission lunaire habitée c'est pour plus tart, ou jamais). Bon, c'est quand même bien meilleur
+                    que ce que une grande partie des adolescents sont capables de faire. Il y a plein de truc içi; le site, des
+                    logiciels étudiants, des truc chelous sur calculatrice et pleins de chose qu'une personne normal ne peut pas
+                    imaginer (à moins d'avoir pris du LSD, mais bon la drogue c'est mal). Cliqué sur un des projets pour le voir.
+                </div>
+            </section>
+            <section>
+                <header><h2>Liste des projets:</h2></header>
+                <div id="projetconteneur">
+                    <article class="projet" style="background-image: url('other/fond.png');">
+                        <h2 style="color: white;">Site web</h2>
+                        <div class="support">
+                            <p>
+                                Bon, est-je vraiment besoin de vous présenter celui là ? Pour le fun je vais le faire quand même.
+                                L'objectif est de partager plus facilement mon travail au monde entier. Avant, ça resté sur mon
+                                pc et personne ne le voyais (ou on me traité de menteur). Donc voila. Je dit pas que c'est le 
+                                meilleur site du monde (définitevement pas), mais il devrai me permettre de faire ce que j'expecte
+                                de lui. D'ailleurs, quoi qu'il arrive, vous devrez voir ce projets. Les autres peuvent être
+                                supprimé n'importe quand.
+                            </p>
+                        </div>
+                        <div class="boutonprojet">
+                            <button type="button" onclick="loadProject('Site web')">
+                                Accéder au projet "Site web".
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </section>
     </body>
 </html>

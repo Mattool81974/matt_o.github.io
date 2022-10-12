@@ -1,0 +1,40 @@
+/*Support du texte des news de la page index.html*/
+article.projet div.support{
+    margin: 3px;
+    padding: 2px;
+}
+/*Support du texte des news de la page index.html*/
+article.projet div.support p{
+    font-size: 24px;
+}
+/*Bouton du projet*/
+.boutonprojet{
+    text-align: center;
+    margin: 5px;
+}
+div.boutonprojet button{
+    font-size: 30px;
+    border: 2px black;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+/*Projet de la page projets.html*/
+.projet{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 15px;
+}
+/*Conteneur de projets*/
+#projetconteneur{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+/*Article dans les conteneurs de projets*/
+#projetconteneur article{
+    flex: 1 1 5in;
+    justify-content: center;
+    align-items: center;
+}
