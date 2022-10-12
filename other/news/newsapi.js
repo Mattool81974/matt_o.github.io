@@ -11,7 +11,7 @@ async function getNews(){
     //Texte finale pour les news (configuré pour une erreur)
     let texteFinale = "<p style=\"text-align: center;align-self: center;font-size: 23px;\">Erreur de connection inconnue.</p>";
     //Style du div parent (pour erreur de connection)
-    let styleParent = "display: inline-flex;flex-wrap: wrap;";
+    let styleParent = "display: block;";
     try{
         //Obtenir tout les éléments dans "News"
         const news = await query.find();
@@ -29,6 +29,7 @@ async function getNews(){
         
         //Reset du texte finale (pas d'erreur de connection)
         texteFinale = "";
+        styleParent = "display: inline-flex;flex-wrap: wrap;";
         //Créer le html de news conteneur
         for(let i = 0;i<news.length;i++)
         {
