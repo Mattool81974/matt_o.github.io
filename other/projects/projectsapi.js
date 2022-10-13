@@ -3,7 +3,7 @@ Parse.initialize("AMa09UbnCvFl8yWQNkDaNRaaEWstk33D96fDHWm5", "jy5DhPcKZqCzQN0HaB
 Parse.serverURL = "https://parseapi.back4app.com/";
 
 async function loadProject(p){
-    alert("Pas encore mais tkt");
+    alert(p + ": Pas encore mais tkt");
 }
 
 //Fonction asynchrone pour charges les projets
@@ -27,7 +27,10 @@ async function getProjects(){
         for(let i = 0;i<projets.length;i++)
         {
             texteFinale += "<article class=\"projet\" style=\"background-image: url(" + projets[i].get("BackgroundImageLink") + ");\">";
-
+            texteFinale += "<h2 style=\"" + projets[i].get("TitleStyle") + "\">" + projets[i].get("Name") + "</h2>";
+            texteFinale += "<div class=\"support\"><p>" + projets[i].get("Text") + "</p></div>";
+            texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('MMathV2')\">";
+            texteFinale += "Accéder au projet \"" + projets[i].get("Name") + "\"</button></div>";
             texteFinale += "</article>"
         }
     }
