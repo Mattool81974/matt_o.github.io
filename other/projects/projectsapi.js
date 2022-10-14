@@ -2,8 +2,24 @@
 Parse.initialize("AMa09UbnCvFl8yWQNkDaNRaaEWstk33D96fDHWm5", "jy5DhPcKZqCzQN0HaB8u7fYlHQC5g2OHVxV4WVYs");
 Parse.serverURL = "https://parseapi.back4app.com/";
 
+let nw = null;
+
+async function loadPage()
+{
+    alert(nw);
+    let s = "";
+    for(let i = 0;i<nw.document.getElementsByTagName('*').length;i++)
+    {
+        s += document.getElementsByTagName('*')[i].innerHTML + " ";
+    }
+    alert(s + " " + nw.title);
+    setTimeout(1000, function (){document.getElementsByTagName('BODY')[0].innerHTML = "<div><p>Salut</p></div>";});
+}
+
 async function loadProject(p){
-    alert(p + ": Pas encore mais tkt");
+    nw = window.open("other/projects/mmathv2.html");
+    nw.focus();
+    nw.addEventListener('DOMContentLoaded', loadPage());
 }
 
 //Fonction asynchrone pour charges les projets
