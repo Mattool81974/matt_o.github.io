@@ -2,24 +2,11 @@
 Parse.initialize("AMa09UbnCvFl8yWQNkDaNRaaEWstk33D96fDHWm5", "jy5DhPcKZqCzQN0HaB8u7fYlHQC5g2OHVxV4WVYs");
 Parse.serverURL = "https://parseapi.back4app.com/";
 
-let nw = null;
-
-async function loadPage()
-{
-    alert(nw);
-    let s = "";
-    for(let i = 0;i<nw.document.getElementsByTagName('*').length;i++)
-    {
-        s += document.getElementsByTagName('*')[i].innerHTML + " ";
-    }
-    alert(s + " " + nw.title);
-    setTimeout(1000, function (){document.getElementsByTagName('BODY')[0].innerHTML = "<div><p>Salut</p></div>";});
-}
-
+//Fonction permettant de lancer la page d'un projet
 async function loadProject(p){
-    nw = window.open("other/projects/mmathv2.html");
+    //Ouverture de la page avec comme nom le nom du projet
+    nw = window.open("other/projects/projet.html", p);
     nw.focus();
-    nw.addEventListener('DOMContentLoaded', loadPage());
 }
 
 //Fonction asynchrone pour charges les projets
@@ -45,7 +32,7 @@ async function getProjects(){
             texteFinale += "<article class=\"projet\" style=\"background-image: url(" + projets[i].get("BackgroundImageLink") + ");\">";
             texteFinale += "<h2 style=\"" + projets[i].get("TitleStyle") + "\">" + projets[i].get("Name") + "</h2>";
             texteFinale += "<div class=\"support\"><p>" + projets[i].get("Text") + "</p></div>";
-            texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('MMathV2')\">";
+            texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('" + projets[i].get("Name") + "')\">";
             texteFinale += "Accéder au projet \"" + projets[i].get("Name") + "\"</button></div>";
             texteFinale += "</article>"
         }
