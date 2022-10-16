@@ -16,6 +16,14 @@ async function loadProjet(){
     let projet = await query.find();
     //Changer le html
     document.getElementById("contenu").innerHTML = projet[0].get("HTMLBody");
+    //Contenir tout les titre h2
+    let titre = document.getElementById("contenu").getElementsByTagName("h2");
+    //Ajouter les titres au navigateur
+    for(let i = 0;i<titre.length;i++)
+    {
+        titre[i].id += "a" + String(i);
+        document.getElementById("navigation").innerHTML += "<div><a href=\"#a" + String(i) + "\">" + titre[i].innerHTML + "</a></div>";
+    }
 }
 
 addEventListener('load', loadProjet);
