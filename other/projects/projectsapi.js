@@ -29,10 +29,12 @@ async function getProjects(){
         //Création des éléments
         for(let i = 0;i<projets.length;i++)
         {
-            texteFinale += "<article class=\"projet\" style=\"background-image: url(" + projets[i].get("BackgroundImageLink") + ");\">";
+            texteFinale += "<article class=\"projet\" style=\"background-image: url(" + projets[i].get("BackgroundImageLink") + ");" + projets[i].get("ImageStyle") + "\">";
             texteFinale += "<h2 style=\"" + projets[i].get("TitleStyle") + "\">" + projets[i].get("Name") + "</h2>";
-            texteFinale += "<div class=\"support\"><p>" + projets[i].get("Text") + "</p></div>";
-            texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('" + projets[i].get("Name") + "')\">";
+            texteFinale += "<div class=\"support\" style=\"" + projets[i].get("SupportStyle") + "\"><p style=" + projets[i].get("TexteStyle") + ">"
+                        + projets[i].get("Text") + "</p></div>";
+            texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('" + projets[i].get("Name") + "')\" style=\"" + projets[i].get("ButtonStyle")
+                        + "\">";
             texteFinale += "Accéder au projet \"" + projets[i].get("Name") + "\"</button></div>";
             texteFinale += "</article>"
         }
