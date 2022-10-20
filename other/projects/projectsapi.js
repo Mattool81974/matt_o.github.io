@@ -32,7 +32,7 @@ async function getProjects(){
             texteFinale += "<article class=\"projet\" style=\"background-image: url(" + projets[i].get("BackgroundImageLink") + ");" + projets[i].get("ImageStyle") + "\">";
             texteFinale += "<h2><span style=\"" + projets[i].get("TitleStyle") + "\">" + projets[i].get("Name") + "</span></h2>";
             texteFinale += "<div class=\"support\" style=\"" + projets[i].get("SupportStyle") + "\"><p style=" + projets[i].get("TexteStyle") + ">"
-                        + projets[i].get("Text") + "</p></div>";
+                        + projets[i].get("Text") + "</p><p style=\"" + projets[i].get("VersionStyle") + "\">Version " + projets[i].get("Version") + "</p></div>";
             texteFinale += "<div class=\"boutonprojet\"><button type=\"button\" onclick=\"loadProject('" + projets[i].get("Name") + "')\" style=\"" + projets[i].get("ButtonStyle")
                         + "\">";
             texteFinale += "Accéder au projet \"" + projets[i].get("Name") + "\"</button></div>";
@@ -54,9 +54,9 @@ async function getProjects(){
                 "Avant, ça resté sur mon" +
                 "pc et personne ne le voyais (ou on me traité de menteur). Donc voila. Je dit pas que c'est le " +
                 "meilleur site du monde (définitevement pas), mais il devrai me permettre de faire ce que j'expecte" +
-                "de lui. D'ailleurs, quoi qu'il arrive, vous devrez voir ce projets. Les autres peuvent être" +
+                "de lui. D'ailleurs, quoi qu'il arrive, vous devrez voir ce projets. Les autres peuvent être " +
                 "supprimé n'importe quand." +
-            "</p>"+
+            "</p><p style=\"text-align: center;\">Version release 3-7</p>"+
         "</div>"+
         "<div class=\"boutonprojet\">"+
             "<button type=\"button\ onclick=\"loadProject('Site web')\">"+
