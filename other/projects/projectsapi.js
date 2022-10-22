@@ -4,9 +4,18 @@ Parse.serverURL = "https://parseapi.back4app.com/";
 
 //Fonction permettant de lancer la page d'un projet
 async function loadProject(p){
-    //Ouverture de la page avec comme nom le nom du projet
-    nw = window.open("other/projects/projet.html", p);
-    nw.focus();
+    //Si le projet n'est pas le site web
+    if(p != 'Site web')
+    {
+        //Ouverture de la page avec comme nom le nom du projet
+        nw = window.open("other/projects/projet.html", p);
+        nw.focus();
+    }
+    else
+    {
+        //Ouverture de la page site web
+        nw = window.open("other/projects/siteweb.html");
+    }
 }
 
 //Fonction asynchrone pour charges les projets
@@ -45,6 +54,8 @@ async function getProjects(){
         texteFinale = "<p style=\"text-align: center;align-self: center;font-size: 36px;\">Erreur de connection: " + err.toString() + "</p>";
     }
 
+    //Version du site web
+    let version = "release 3-9";
     //Article apparaissant quoi qu'il arrive
     let contenuPremierArticle =
     "<article class=\"projet\" style=\"background-image: url('other/fond.png');\">"+
@@ -53,13 +64,13 @@ async function getProjects(){
             "<p>Bon, est-je vraiment besoin de vous présenter celui là ? Pour le fun je vais le faire quand même. L'objectif est de partager plus facilement mon travail au monde entier."+ 
                 "Avant, ça resté sur mon" +
                 "pc et personne ne le voyais (ou on me traité de menteur). Donc voila. Je dit pas que c'est le " +
-                "meilleur site du monde (définitevement pas), mais il devrai me permettre de faire ce que j'expecte" +
+                "meilleur site du monde (définitivement pas), mais il devrai me permettre de faire ce que j'expecte" +
                 "de lui. D'ailleurs, quoi qu'il arrive, vous devrez voir ce projets. Les autres peuvent être " +
                 "supprimé n'importe quand." +
-            "</p><p style=\"text-align: center;\">Version release 3-7</p>"+
+            "</p><p style=\"text-align: center;\">Version " + version + "</p>"+
         "</div>"+
         "<div class=\"boutonprojet\">"+
-            "<button type=\"button\ onclick=\"loadProject('Site web')\">"+
+            "<button type=\"button\" onclick=\"loadProject('Site web')\">"+
                 "Accéder au projet \"Site web\"."+
             "</button>"+
         "</div>" +

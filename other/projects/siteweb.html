@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Matt_o">
+        <link rel="stylesheet" href="../../basestyle.css">
+        <link rel="stylesheet" href="styleprojet.css">
+        <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+        <title>Projet</title>
+    </head>
+    <body id="background">
+        <header>
+            <h1 id="titreprincipalepage">
+                Site web
+            </h1>
+        </header>
+        <section class="support"> 
+            <header id="pages">
+                <button type="button" onclick="homeClick();" id="home">Home</button>
+                <button type="button" onclick="presentationClick();" id="presentation">Présentation</button>
+                <button type="button" onclick="projetClick();" id="projet">Projets</button>
+                <button type="button" onclick="referenceClick();" id="references">Références</button>
+                <!--Code des boutons-->
+                <script>
+                    function homeClick(){
+                        window.location.assign("../../index.html");
+                    }
+                    function presentationClick() {
+                        window.location.assign("../../presentation.html");
+                    }
+                    function projetClick() {
+                        window.location.assign("../../projets.html");
+                    }
+                    function referenceClick() {
+                        window.location.assign("../../reference.html");
+                    }
+                </script>
+            </header>
+            <div style="display:flex;flex-wrap: wrap;">
+                <nav id="navigation">
+                    <header>
+                        <h3>
+                            Sous-parties:
+                            <a href="#presentation">Présentation</a>
+                            <a href="#histoire">Histoire</a>
+                        </h3>
+                    </header>
+                </nav>
+                <div style="align-self:flex-end;flex-basis: 3in;flex-shrink: 0;flex-grow: 10;" id="contenu">
+                    <h2 id="presentation">
+                        Présentation
+                    </h2>
+                    <div>
+                        Cela fait très longtemps que je voulais réaliser un site web. Publié dés le 14 septembre 2022, ce site est un site ou je pourrais mettre tout mes travaux sur
+                        divers sujets. Son objectif est de pouvoir partager au gens ces travaux sans difficultés. Il s'inspire des site réalisé par les programmeurs par 90% des
+                        programmeurs freelance. Il contient pour l'instant quelques parties pratiques, surtout la section projet, qui devrai être la plus rempli (si je chôme pas).
+                    </div>
+                    <h2 id="histoire">
+                        Histoire
+                    </h2>
+                    <div>
+                        Ce site web est né le 14 septembre 2022. Même si il est assez récent, mon envie de faire un site web est assez ancienne. Mais avant, je vais vous parler de 
+                        mon tout premier site web. En 2020 (ça date), je voulais me faire un site web. L'objectif était de faire un site web pour un de mes premiers projets (qui 
+                        n'est pas encore présent au moment ou on parle sur ce site, mais qui devrai l'être d'ici peu) que j'aimerai ramener au jour: PMS. C'est une application de 
+                        planning avancée. Voulant créer un site web, mini-moi marque sur Google "Comment qu'on crée un site web de QUAlité ?". Je tombe sur un cours html et css, 
+                        que je m'empresse de faire, et un site web (chelou) hébergeur de site web. J'upload mon premier site, avec une extension très sexy de type "freecluster
+                        .eu". Je n'ai pas retrouvé ce site web, mais ça faisait pitié, croyez moi. Apprenant de mes erreur, je ré-itère cette action pour exactement la même cause, 
+                        mais en plus moche et en 2021 (début 2021). Ensuite, je n'ai pas trop fait de choses par rapport au html/css pendant 1 ans, jusqu'a ce qu'en milieu 2022, je
+                        me retrouve débordé par ma miteuse organisation. Je me dis donc qu'un site web serai une bonne idée pour pouvoir m'organisé mieux. C'est à ce moment là que
+                        l'idée apparaît, vers avril 2022. Cependant, il faudra 5 mois pour que je commence ce site. La finalité, est que ce site est finalement apparu le 14
+                        septembre 2022, après avoir regarder un cour pour faire des sites gratuitement sur Github.
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </body>
+</html>
