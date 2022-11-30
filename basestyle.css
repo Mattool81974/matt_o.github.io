@@ -1,6 +1,6 @@
 /*Background de chaque pages*/
 #background {
-    background-image:url('other/fond.png');
+    background-image:url('assets/fond.png');
 }
 /*Boutons*/
 header#pages button{

@@ -8,13 +8,13 @@ async function loadProject(p){
     if(p != 'Site web')
     {
         //Ouverture de la page avec comme nom le nom du projet
-        nw = window.open("other/projects/projet.html", p);
+        nw = window.open("assets/projects/projet.html", p);
         nw.focus();
     }
     else
     {
         //Ouverture de la page site web
-        nw = window.open("other/projects/siteweb.html");
+        nw = window.open("assets/projects/siteweb.html");
     }
 }
 
@@ -58,7 +58,7 @@ async function getProjects(){
     let version = "release 3-9";
     //Article apparaissant quoi qu'il arrive
     let contenuPremierArticle =
-    "<article class=\"projet\" style=\"background-image: url('other/fond.png');\">"+
+    "<article class=\"projet\" style=\"background-image: url('assets/fond.png');\">"+
         "<h2 style=\"color: white;\">Site web</h2>"+
         "<div class=\"support\">" +
             "<p>Bon, est-je vraiment besoin de vous présenter celui là ? Pour le fun je vais le faire quand même. L'objectif est de partager plus facilement mon travail au monde entier."+ 
